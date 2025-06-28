@@ -1,0 +1,59 @@
+.portabilidade {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.portabilidade h1 {
+    font-size: 2rem;
+    color: #074C3D;
+}
+
+.portabilidade p {
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+@media (max-width: 1000px) {
+    .portabilidade h1 {
+        font-size: 1.5rem;
+    }
+
+    .portabilidade p {
+        font-size: 0.9rem;
+        margin-top: 15px;
+    }
+
+    .portabilidade .button {
+        font-size: .875rem;
+        width: 150px;
+        height: 5px;
+    }
+}
+
+@media (max-width: 800px) {
+    .portabilidade {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .portabilidade > div:first-child {
+        grid-row: 2;
+    }
+
+    .portabilidade > div:last-child {
+        grid-row: 1;
+
+    }
+
+    .portabilidade p {
+        margin-top: 10px;
+    }
+
+    .portabilidade img {
+        margin: 0 auto;
+    }
+
+}

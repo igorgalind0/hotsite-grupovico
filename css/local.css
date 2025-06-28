@@ -1,0 +1,74 @@
+.local {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.local h1 {
+    font-size: 2rem;
+    color: #074C3D;
+}
+
+.local p {
+    font-size: 1.25rem;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.local ul {
+    display: flex;
+    margin-top: 30px;
+}
+
+.local ul li p {
+    margin-top: 0;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.local .button {
+    margin-top: 30px;
+}
+
+@media (max-width: 1000px) {
+    .local {
+        margin-top: 20px;
+    }
+    .local h1 {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+
+    .local p {
+        font-size: .875rem;
+        margin-top: 10px;
+    }
+
+    .local ul li p {
+        font-size: 1rem;
+    }
+
+    .local .button {
+        font-size: .875rem;
+        width: 150px;
+        height: 5px;
+    }
+}
+
+@media (max-width: 800px) {
+    .local {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .local ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .local img {
+        width: 400px;
+        margin: 10px auto;
+    }
+}

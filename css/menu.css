@@ -1,0 +1,128 @@
+.menu-bg {
+    padding: 40px 0;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+[data-menu='list'] {
+    display: flex;
+    gap: 20px;
+}
+
+[data-menu='list'] a {
+    color: #074C3D;
+    font-weight: 500;
+}
+
+[data-menu='list'] a:hover {
+    transition: .2s;
+    color: #00AC4B;
+}
+
+[data-menu='list'] .button-menu {
+    background: #074C3D;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 8px;
+}
+
+[data-menu='list'] .button-menu:hover {
+    background: #05322a;
+    color: #fff;
+    transition: .2s;
+}
+
+[data-menu='button'] {
+    display: none;
+}
+
+@media (max-width: 950px) {
+    [data-menu="button"] {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 1rem;
+        color: #fff;
+        border-radius: 4px;
+        padding: 10px;
+        background-color: #074C3D;
+        border: none;
+        z-index: 300;
+        cursor: pointer;
+        position: relative;
+    }
+
+    [data-menu="button"]::before {
+        margin-right: 4px;
+        content: '';
+        display: inline-block;
+        height: 2px;
+        width: 12px;
+        background: #fff;
+        box-shadow: 0 4px #fff, 0 -4px #fff;
+    }
+
+    [data-menu="list"].ativo {
+        display: block !important;
+        position: absolute;
+        background: #074C3D;
+        padding: 25px;
+        top: 110px;
+        right: 20px;
+        border-radius: 0 0 8px 8px;
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+        animation: slideDown 0.3s ease-out;
+        text-align: left;
+    }
+
+    [data-menu="list"].ativo li {
+        margin-top: 5px;
+    }
+
+    [data-menu="list"].ativo li a{
+        color: #fff;
+    }
+
+    [data-menu="list"].ativo li a:hover {
+        color: #00A859;
+    }
+
+    [data-menu="list"].ativo li .button-menu{
+        margin-top: 10px;
+        background: #00AC4B;
+        display: inline-block;
+    }
+
+    [data-menu="list"].ativo li .button-menu:hover {
+        transition: .2s;
+        background: #00A859;
+        color: #fff;
+    }
+
+    [data-menu='list'] {
+        display: none !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu img {
+        width: 120px;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,122 @@
+.passos-bg {
+    background: #074C3D;
+    padding-top: 100px;
+    margin-top: 50px;
+    box-shadow: inset 0 -50px 0 #fff;
+}
+
+.passos h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.passos ul {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.passos ul li {
+    background: #00A859;
+    border-radius: 8px;
+    width: 230px;
+    height: 300px;
+    padding: 20px;
+}
+
+.passos li h1 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.passos li p {
+    font-size: 1rem;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.passos ul li a {
+    font-size: 1rem;
+    background: #074C3D;
+    display: inline-block;
+    color: #fff;
+    padding: 15px 60px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.passos ul li a:hover {
+    background: #05322a;
+    transition: .2s;
+}
+
+@media (max-width: 1200px) {
+    .passos ul {
+        gap: 10px;
+    }
+    .passos ul li h1 {
+        font-size: 1.25rem;
+    }
+    .passos ul li p {
+        font-size: .875rem;
+    }
+    .passos ul li a {
+        font-size: .875rem;
+        padding: 15px 30px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 900px) {
+    .passos ul li a {
+        font-size: 0.875rem;
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .passos-bg {
+        padding-top: 50px;
+    }
+    .passos h1 {
+        font-size: 1.5rem;
+    }
+    .passos ul li {
+        width: 180px;
+        height: 300px;
+        padding: 15px;
+    }
+    .passos li h1 {
+        font-size: 1.2rem;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .passos li p {
+        font-size: 0.875rem;
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .passos ul li a {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .passos {
+        padding-top: 50px;
+    }
+    .passos ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .passos ul li {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+}

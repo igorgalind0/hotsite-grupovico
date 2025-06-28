@@ -1,0 +1,142 @@
+.franqueado-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.franqueado-form h1 {
+    font-size: 2rem;
+    color: #074C3D;
+}
+
+.franqueado-form p {
+    font-size: 1rem;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.bg-form {
+    background: #074C3D;
+    color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.bg-form p {
+    margin-bottom: 20px;
+}
+
+.form .input-icon {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form .input-icon img {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    pointer-events: none;
+}
+
+.form .input-icon input {
+    width: 100%;
+    height: 50px;
+    padding: 14px 10px 14px 42px;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border: none;
+}
+
+.div-check {
+    background: #D9D9D9;
+    color: #1e1e1e;
+    font-size: .875rem;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.form button {
+  display: block;
+  padding: 10px 50px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border: none;
+  background-color: #00A859;
+  color: white;
+  font-weight: 600;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  margin-left: auto;
+}
+
+.form button:hover {
+    background: #007a45;
+    transition: .2s;
+}
+
+@media (max-width: 1000px) {
+  .franqueado-form {
+    gap: 30px;
+  }
+
+  .franqueado-form h1 {
+    font-size: 1.5rem;
+  }
+
+  .franqueado-form p {
+    font-size: 0.95rem;
+  }
+
+  .form button {
+    font-size: 1.1rem;
+    padding: 10px 40px;
+  }
+
+  .form .input-icon input {
+    font-size: 0.95rem;
+  }
+
+  .div-check {
+    font-size: 0.8rem;
+  }
+
+  .franqueado-form a {
+    font-size: .875rem;
+    width: 150px;
+    height: 5px;
+  }
+}
+
+@media (max-width: 800px) {
+  .franqueado-form {
+    grid-template-columns: 1fr;
+  }
+
+  /* Ordem invertida no mobile */
+  .franqueado-form > div:first-child {
+    order: 1;
+  }
+
+  .franqueado-form > .bg-form {
+    order: 2;
+  }
+
+  .bg-form {
+    padding: 30px;
+  }
+
+  .form button {
+    margin-left: unset;
+    width: 100%;
+  }
+}

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Domine:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-primaria);
+}
+
+h1, h2, h3, ul, li, p, dd, dt {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.marcacao {
+    color: #00AC4B;
+}
+
+.button {
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 20px;
+    background: #074C3D;
+
+    width: 200px;
+    height: 30px;
+
+    padding: 20px 50px;
+    
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.button:hover {
+    background: #05322a;
+    transition: .2s;
+}
+

@@ -1,0 +1,137 @@
+.portal ul {
+    display: flex;
+    flex-wrap: wrap; /* permite quebra em linhas */
+    justify-content: center;
+    align-items: stretch; /* força altura igual entre os li */
+    gap: 12px;
+    margin-top: 50px;
+    padding: 0;
+    list-style: none;
+}
+
+.portal ul li {
+    cursor: pointer;
+    width: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    text-align: center;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    /* Garante altura mínima padrão */
+    min-height: 230px;
+    box-sizing: border-box;
+}
+
+.portal ul li img {
+    margin-top: 20px;
+    height: 40px;
+}
+
+.portal ul li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.portal li h1 {
+    font-size: 1rem;
+    color: #074C3D;
+    margin-top: 10px;
+}
+
+.portal li p {
+    margin-top: 10px;
+}
+
+.portal ul li p:last-of-type {
+    font-size: 0.875rem;
+    font-style: italic;
+}
+
+.portal ul li p:first-of-type:last-of-type {
+    font-style: normal;
+    color: initial;
+    font-size: 1rem;
+}
+
+@media (max-width: 1000px) {
+    .portal ul {
+        gap: 8px;
+    }
+
+    .portal ul li {
+        width: 130px;
+        height: auto;
+        padding: 10px 5px;
+    }
+
+    .portal ul li img {
+        height: 35px;
+        margin-top: 15px;
+    }
+
+    .portal li h1 {
+        font-size: 0.9rem;
+        margin-top: 8px;
+    }
+
+    .portal li p {
+        font-size: 0.9rem;
+        margin-top: 8px;
+    }
+
+    .portal ul li p:last-of-type {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .portal ul {
+        flex-wrap: wrap;       /* permite quebrar em linhas */
+        justify-content: center;
+        gap: 12px;
+        margin-top: 40px;
+    }
+
+    .portal ul li {
+        width: 45%;            /* dois por linha */
+        min-width: 140px;
+        height: auto;
+        padding: 15px 10px;
+    }
+
+    .portal ul li img {
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .portal li h1 {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .portal li p {
+        font-size: 0.95rem;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .portal ul li {
+        width: 90%;           /* uma coluna só no celular */
+        min-width: unset;
+        padding: 15px 10px;
+    }
+
+    .portal ul {
+        gap: 15px;
+    }
+}

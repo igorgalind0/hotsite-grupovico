@@ -81,6 +81,18 @@
         text-align: left;
     }
 
+    [data-menu="list"].ativo::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #074C3D;
+    }   
+
     [data-menu="list"].ativo li {
         margin-top: 5px;
     }
@@ -108,9 +120,7 @@
     [data-menu='list'] {
         display: none !important;
     }
-}
 
-@media (max-width: 600px) {
     .menu img {
         width: 120px;
     }

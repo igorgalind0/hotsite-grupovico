@@ -101,8 +101,8 @@
 
     [data-menu="list"].ativo li .button-menu:hover {
         transition: .2s;
-        background: #00A859;
         color: #fff;
+        background: #00A859;
     }
 
     [data-menu='list'] {

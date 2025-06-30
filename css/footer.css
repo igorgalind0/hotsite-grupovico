@@ -100,11 +100,6 @@
   font-size: 1rem
 }
 
-.contato ul li div{
-  display: flex;
-  flex-direction: column;
-}
-
 .navegar li {
   margin-bottom: 10px;
 }

@@ -1,8 +1,8 @@
 .portal ul {
     display: flex;
-    flex-wrap: wrap; /* permite quebra em linhas */
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch; /* força altura igual entre os li */
+    align-items: stretch;
     gap: 12px;
     margin-top: 50px;
     padding: 0;
@@ -26,9 +26,20 @@
 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 
-    /* Garante altura mínima padrão */
     min-height: 230px;
     box-sizing: border-box;
+}
+
+.portal ul .fixo {
+    background: #074C3D;
+}
+
+.portal ul .fixo h1 {
+    color: #00A859;
+}
+
+.portal ul .fixo p {
+    color: #fff !important;
 }
 
 .portal ul li img {
@@ -95,14 +106,14 @@
 
 @media (max-width: 700px) {
     .portal ul {
-        flex-wrap: wrap;       /* permite quebrar em linhas */
+        flex-wrap: wrap;
         justify-content: center;
         gap: 12px;
         margin-top: 40px;
     }
 
     .portal ul li {
-        width: 45%;            /* dois por linha */
+        width: 45%;
         min-width: 140px;
         height: auto;
         padding: 15px 10px;
@@ -126,7 +137,7 @@
 
 @media (max-width: 400px) {
     .portal ul li {
-        width: 90%;           /* uma coluna só no celular */
+        width: 90%;
         min-width: unset;
         padding: 15px 10px;
     }

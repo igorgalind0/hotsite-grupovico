@@ -193,34 +193,42 @@
             <li>
                 <img src="./img/icons-oferecemos/suporte.svg" alt="">
                 <p>Suporte em publicidade e propaganda</p>
-                <h2>Saiba mais</h2>
+                <a href="#" data-title="Suporte e Publicidade!" data-text="Elaboração e padronização da identidade visual, elaboração e manutenção do manual de identidade visual. Desenvolvimento de artes para divulgação da marca." data-img="img\img-modal\suporte_mkt.jpg">Saiba mais</a>
             </li>
             <li>
                 <img src="./img/icons-oferecemos/assessoria.svg" alt="">
                 <p>Assessoria em marketing e vendas (Área comercial)</p>
-                <h2>Saiba mais</h2>
+                <a href="#" data-title="Assessoria em marketing!" data-text="Orientação para campanhas de marketing, orientação para Elaboração de planejamentos comerciais, orientação para Aplicação de ferramentas para medição de retorno e qualificação de fornecedores para os materiais publicitários." data-img="img\img-modal\assessoria_mkt.jpeg">Saiba mais</a>
             </li>
             <li>
                 <img src="./img/icons-oferecemos/tecnico.svg" alt="">
                 <p>Suporte técnico qualificado farmacêutico</p>
-                <h2>Saiba mais</h2>
+                <a href="#" data-title="Suporte Técnico Farmacêutico!" data-text="Esclarecimento de dúvidas técnicas farmacêuticas. Consultas específicas sobre os procedimentos operacionais padrão e instruções para informação e aperfeiçoamento, de forma on-line. Desenvolvimento de fórmulas magistrais, de acordo com Farmacopeias. Fornecimento de Lista de fornecedores qualificados. Atualização sobre legislação sanitária e farmacêutica, em área específica do site, com acesso controlado pela franqueadora, exclusivo para as unidades VICOFLORA. Avaliação e revisão dos manuais para acompanhar o processo de melhoria contínua da rede VICOFLORA, e atender aos requisitos do SGQ e da legislação sanitária vigente. Serviços diferenciados para visitação médica. Treinamento “on-line”ou presencial (Presenciais em unidade piloto em São Paulo, ou na unidade franqueada, com custos de transporte, alimentação, hospedagem e profissional, de responsabilidade do Franqueado). Acesso aos recursos e informações disponíveis através do Portal da VICOFLORA (sala VIP)." data-img="img\img-modal\suporte_farma.jpg">Saiba mais</a>
             </li>
             <li>
                 <img src="./img/icons-oferecemos/auditoria.svg" alt="">
                 <p>Auditoria periódica e consultoria de campo</p>
-                <h2>Saiba mais</h2>
+                <a href="#" data-title="Auditoria Periódica!" data-text="Serviços de assessoria para o acompanhamento do desempenho técnico, comercial e mercadológico das Unidades Franqueadas. Orientações técnicas e comerciais dentro de um modelo de Sistema de Gestão da Qualidade certificado e de acordo com a legislação vigente. Auditoria Virtual, para acompanhamento da operação de rotina das Unidades Franqueadas, com acesso aos recursos, informações e indicadores de desempenho do Portal da VICOFLORA (sala VIP). Verificação periódica da conformidade com a legislação vigente." data-img="img\img-modal\auditoria.jpg">Saiba mais</a>
             </li>
             <li>
                 <img src="./img/icons-oferecemos/orientacao.svg" alt="">
                 <p>Orientação para assuntos da área jurídica</p>
-                <h2>Saiba mais</h2>
+                <a href="#" data-title="Orientação na área Jurídica!" data-text="Área jurídica para esclarecimento de dúvidas. A Franqueadora disponibiliza um canal para esclarecimento de dúvidas" data-img="img\img-modal\orienta_juridica.jpg">Saiba mais</a>
             </li>
             <li>
                 <img src="./img/icons-oferecemos/treinamento.svg" alt="">
                 <p>Programa de treinamento contínuo</p>
-                <h2>Saiba mais</h2>
+                <a href="#" data-title="Programa de Treinamento Contínuo" data-text="O mundo do franchising consiste basicamente em replicar o sucesso de um negócio em outras regiões. Desta forma a franqueadora disponibiliza um programa de treinamento de qualidade para repassar esse know-how, como: Técnicas de gerenciamento, Técnicas de atendimento ao cliente, Telemarketing, Fechamento de vendas eficazes e Visitação Médica." data-img="img\img-modal\programa_treinamento.jpg">Saiba mais</a>
             </li>
         </ul>
+
+        <dialog id="modal">
+            <img src="" alt="" id="modal-img">
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+            <button id="close-modal">Fechar</button>
+        </dialog>
+
     </section>
 
     <section class="franqueado-form container">
@@ -264,6 +272,7 @@
 
     <div id="modal" class="modal">
         <div class="modal-content">
+            <div><img id="modal-img" src="" alt=""></div>
             <span id="popup-msg"></span><br>
             <button id="popup-close">Fechar</button>
         </div>

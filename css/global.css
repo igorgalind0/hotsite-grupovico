@@ -63,3 +63,7 @@ img {
     transition: .2s;
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}

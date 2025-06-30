@@ -42,7 +42,7 @@
     font-size: 1.25rem;
 }
 
-.oferecemos ul li h2 {
+.oferecemos ul li a {
     color: #00AC4C;
     font-size: 1.25rem;
     padding: 5px;
@@ -50,7 +50,7 @@
     cursor: pointer;
 }
 
-.oferecemos ul li h2:hover {
+.oferecemos ul li a:hover {
     color: #007a45;
     transition: .2s;
 }

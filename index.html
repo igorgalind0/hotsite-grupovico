@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./img/logo-menu.png" type="image/x-icon">
+
+    <script src="./script-form.js" defer></script>
+    <script src="./script-newsletter.js" defer></script>
+
     <title>GrupoVico</title>
 </head>
 <body>
@@ -14,11 +18,11 @@
             <div><img src="./img/logo-menu.png" alt="Logomarca Grupo Vico"></div>
             <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
             <ul data-menu="list">
-                <li><a href="">Onde estamos</a></li>
-                <li><a href="">Passo a Passo</a></li>
-                <li><a href="">Linha de Crédito</a></li>
-                <li><a href="">Portabilidade</a></li>
-                <li><a href="" class="button-menu">Faça parte</a></li>
+                <li><a href="#local">Onde estamos</a></li>
+                <li><a href="#passos">Passo a Passo</a></li>
+                <li><a href="#credito">Linha de Crédito</a></li>
+                <li><a href="#portabilidade">Portabilidade</a></li>
+                <li><a href="#form-contato" class="button-menu">Faça parte</a></li>
             </ul>
         </nav>
     </div>
@@ -30,7 +34,7 @@
 
             <p>Faça parte da VICOFLORA® e empreenda com uma marca premiada, experiente e reconhecida no mercado. Com suporte completo e modelo de negócio personalizado, você cresce com segurança e rentabilidade.</p>
 
-            <a href="#" class="button">Eu quero</a>
+            <a href="#form-contato" class="button">Eu quero</a>
         </div>
 
         <div><img src="./img/img-intro.svg" alt=""></div>
@@ -45,14 +49,14 @@
 
                 <p>Ao ingressar na rede, o franqueado conta com suporte completo, modelos de negócio alinhados ao seu perfil e a segurança necessária para um investimento lucrativo.</p>
 
-                <a href="#" class="button">Faça parte</a>
+                <a href="#form-contato" class="button">Faça parte</a>
             </div>
 
             <div><img src="./img/img-info.jpg" alt="Mulher falando com homem"></div>
         </section>
     </div>
 
-    <section class="local container">
+    <section id="local" class="local container">
         <div>
             <h1>Uma oportunidade única e lucrativa</h1>
             <p>Somos o segmento que mais cresce no Brasil.</p>
@@ -73,13 +77,13 @@
                 </li>
             </ul>
 
-            <a href="#" class="button">Ser franqueado</a>
+            <a href="#form-contato" class="button">Ser franqueado</a>
         </div>
 
         <div><img src="./img/img-mapa.svg" alt="Mapa Brasil"></div>
     </section>
 
-    <div class="passos-bg">
+    <div id="passos" class="passos-bg">
         <section class="passos container">
             <h1>Conheça o passo-a-passo para <span class="marcacao">tornar-se um franqueado:</span></h1>
 
@@ -87,7 +91,7 @@
                 <li>
                     <h1>Cadastro no Site</h1>
                     <p>Cadastre-se abaixo, indicando seu interesse em receber mais informações sobre como abrir uma franquia.</p>
-                    <a href="#">Cadastre-se</a>
+                    <a href="#form-contato">Cadastre-se</a>
                 </li>
                 <li>
                     <h1>Análise</h1>
@@ -105,7 +109,7 @@
         </section>
     </div>
 
-    <section class="credito container">
+    <section id="credito" class="credito container">
         <div>
             <h1>Linhas de crédito</h1>
             <dl>
@@ -127,7 +131,7 @@
         <div><img src="./img/img-credito.png" alt="Mulher digitando na calculadora"></div>
     </section>
 
-    <section class="portabilidade container">
+    <section id="portabilidade" class="portabilidade container">
         <div><img src="./img/img-portabilidade.png" alt="Pessoa usando tubo de vidro"></div>
 
         <div>
@@ -135,7 +139,7 @@
             <p>Se você já possui uma estrutura de farmácia e deseja fazer parte da nossa equipe, basta entrar em contato conosco! Você pode fazer a portabilidade e trocar a sua bandeira por uma franquia VICOFLORA®.</p>
             <p>Temos benefícios e vantagens incríveis, especialmente pensadas pra você.</p>
 
-            <a href="#" class="button">Faça portabilidade</a>
+            <a href="#form-contato" class="button">Faça portabilidade</a>
         </div>
     </section>
 
@@ -224,12 +228,12 @@
             <h1>Quer ser um franqueado de sucesso?</h1>
             <p>O sucesso da rede de franquias VICOFLORA® combina força comercial, tecnologia e interação entre pessoas, unidos a uma estrutura moderna e experiência de mais de 36 anos no mercado de Farmácias de manipulação.</p>
 
-            <a href="#" class="button">Saber mais</a>
+            <h2>Preencha o formulário para entrar em contato.</h2>
         </div>
 
         <div class="bg-form">
             <p>Deixe seu contato para retornarmos</p>
-            <form action="#" class="form">
+            <form action="./enviar-email.php" method="POST" class="form" id="form-contato">
                 <div class="input-icon">
                     <img src="./img/icons-form/nome.svg" alt="Ícone nome">
                     <input type="text" id="nome" name="nome" placeholder="Nome" required>
@@ -246,15 +250,23 @@
                 </div>
                 
                 <div class="div-check">
-                <input type="checkbox" id="termos" name="termos" required>
-                Concordo que meus dados poderão ser utilizados para um atendimento personalizado que possibilitará o envio de comunicação de ofertas e serviços de acordo com os meus interesses, pelos meios que disponibilizei no formulário. A qualquer momento eu poderei me descadastrar do recebimento. Para mais detalhes consulte nossa Política de Privacidade.</a>
-                </label><br><br></div>
+                <label for="termos">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    Concordo que meus dados poderão ser utilizados para um atendimento personalizado que possibilitará o envio de comunicação de ofertas e serviços de acordo com os meus interesses, pelos meios que disponibilizei no formulário. A qualquer momento eu poderei me descadastrar do recebimento.
+                </label>
+                </div>
                 
-
                 <button type="submit">Enviar</button>
             </form>
         </div>
     </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="popup-msg"></span><br>
+            <button id="popup-close">Fechar</button>
+        </div>
+    </div>
 
     <div class="footer-bg">
         <footer class="footer container">
@@ -269,7 +281,7 @@
             <div>
                 <h1>Mais novidades? <span class="marcacao">Inscreva-se em nossas Newsletter!</span></h1>
 
-                <form action="" class="newsletter">
+                <form action="./cadastrar.php" method="POST" class="newsletter">
                     <div class="inputs-row">
                         <div class="input-icon">
                             <img src="./img/icons-form/nome.svg" alt="Ícone nome">
@@ -283,6 +295,13 @@
 
                     <button type="submit">Cadastrar</button>
                 </form>
+
+                <div id="modal-newsletter" class="modal">
+                    <div class="modal-content">
+                        <span id="newsletter-msg"></span><br>
+                        <button id="newsletter-close">Fechar</button>
+                    </div>
+                </div>
             </div>
 
             <div class="listas-footer">
@@ -305,10 +324,10 @@
                 <div class="navegar">
                     <h1 class="titulo-footer">Mapa do site</h1>
                     <ul>
-                        <li><a href="#">Onde estamos</a></li>
-                        <li><a href="#">Passo a Passo</a></li>
-                        <li><a href="#">Linha de Crédito</a></li>
-                        <li><a href="#">Portabilidade</a></li>
+                        <li><a href="#local">Onde estamos</a></li>
+                        <li><a href="#passos">Passo a Passo</a></li>
+                        <li><a href="#credito">Linha de Crédito</a></li>
+                        <li><a href="#portabilidade">Portabilidade</a></li>
                     </ul>
                 </div>
 
@@ -318,11 +337,11 @@
                         <ul>
                             <li>
                                 <div><img src="./img/instagram.svg" alt="Instagram"></div>
-                                <p>@vicofloraoficial</p>
+                                <a href="https://www.instagram.com/vicofloraoficial" target="_blank">@vicofloraoficial</a>
                             </li>
                             <li>
                                 <div><img src="./img/facebook.svg" alt="Facebook"></div>
-                                <p>Vicoflora</p>
+                                <a href="https://www.facebook.com/VicoFloraOficial" target="_blank">Vicoflora</a>
                             </li>
                         </ul>
                     </div>
@@ -332,11 +351,11 @@
                         <ul>
                             <li>
                                 <div><img src="./img/instagram.svg" alt="Instagram"></div>
-                                <p>@vicofarmaoficial</p>
+                                <a href="https://www.instagram.com/vicofarmaoficial" target="_blank">@vicofarmaoficial</a>
                             </li>
                             <li>
                                 <div><img src="./img/facebook.svg" alt="Facebook"></div>
-                                <p>Vicofarma</p>
+                                <a href="https://www.facebook.com/VicoFarmaOficial" target="_blank">Vicofarma</a>
                             </li>
                         </ul>
                     </div>

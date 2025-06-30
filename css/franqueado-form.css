@@ -16,6 +16,12 @@
     text-align: justify;
 }
 
+.franqueado-form h2 {
+  color: #074C3D;
+  font-size: 1.25rem;
+  margin-top: 20px;
+}
+
 .bg-form {
     background: #074C3D;
     color: #fff;
@@ -122,7 +128,6 @@
     grid-template-columns: 1fr;
   }
 
-  /* Ordem invertida no mobile */
   .franqueado-form > div:first-child {
     order: 1;
   }
